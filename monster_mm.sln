@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "monster_mm", "dlls\monster_mm.vcxproj", "{66F24469-49CD-4AEA-8996-65BC07051124}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66F24469-49CD-4AEA-8996-65BC07051124}.Debug|x86.ActiveCfg = Debug|Win32
+		{66F24469-49CD-4AEA-8996-65BC07051124}.Debug|x86.Build.0 = Debug|Win32
+		{66F24469-49CD-4AEA-8996-65BC07051124}.Release|x86.ActiveCfg = Release|Win32
+		{66F24469-49CD-4AEA-8996-65BC07051124}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C33B7A5C-598C-4C83-88D2-B989DD00BDD0}
+	EndGlobalSection
+EndGlobal
