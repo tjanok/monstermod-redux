@@ -1444,6 +1444,15 @@ void UTIL_BubbleTrail( Vector from, Vector to, int count )
 	MESSAGE_END();
 }
 
+void UTIL_RemoveSDK( CMBaseEntity* pEntity )
+{
+	if( !pEntity )
+		return;
+
+	pEntity->UpdateOnRemove();
+	pEntity->pev->flags |= FL_KILLME;
+	pEntity->pev->targetname = 0;
+}
 
 void UTIL_Remove( edict_t *pEntity )
 {

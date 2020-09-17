@@ -75,7 +75,7 @@ mutil_funcs_t *gpMetaUtilFuncs;     // metamod utility functions
 
 cvar_t init_dllapi_log = {"monster_log", "0", FCVAR_EXTDLL, 0, NULL};
 cvar_t *dllapi_log = NULL;
-cvar_t init_monster_spawn = {"monster_spawn", "1", FCVAR_EXTDLL, 0, NULL};
+cvar_t init_monster_spawn = {"monster_spawn", "0", FCVAR_EXTDLL, 0, NULL};
 cvar_t *monster_spawn = NULL;
 
 

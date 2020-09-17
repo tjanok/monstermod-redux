@@ -57,7 +57,10 @@ public:
 			pev->skin = ENTINDEX(pEntity);
 			pev->body = attachment;
 			pev->aiment = pEntity;
+			pev->owner = pEntity;
 			pev->movetype = MOVETYPE_FOLLOW;
+
+			META_CONS( "setting pentity stuff.... %d and %d", pEntity, pEntity->free );
 		}
 	}
 	void TurnOff( void );

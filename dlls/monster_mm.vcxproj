@@ -92,14 +92,7 @@
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
-      <Command>copy $(TargetPath) D:\Half-Life\valve\dlls 
-copy $(TargetPath) D:\Half-Life\tfc\dlls 
-copy $(TargetPath) D:\Half-Life\cstrike\dlls 
-copy $(TargetPath) D:\Half-Life\dmc\dlls 
-copy $(TargetPath) D:\Half-Life\dod\dlls 
-copy $(TargetPath) D:\Half-Life\firearms\dlls 
-copy $(TargetPath) D:\Half-Life\frontline\dlls 
-copy $(TargetPath) D:\Half-Life\gearbox\dlls </Command>
+      <Command>copy $(TargetPath) D:\SteamLibrary\SteamApps\common\Half-Life\tfc\addons\monstermod\dlls</Command>
       <Message>Copying to DLL folder</Message>
       <Outputs>$(TargetName);%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -145,13 +138,7 @@ copy $(TargetPath) D:\Half-Life\gearbox\dlls </Command>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <CustomBuildStep>
-      <Command>copy $(TargetPath) D:\Half-Life\valve\dlls 
-copy $(TargetPath) D:\Half-Life\tfc\dlls 
-copy $(TargetPath) D:\Half-Life\cstrike\dlls 
-copy $(TargetPath) D:\Half-Life\dmc\dlls 
-copy $(TargetPath) D:\Half-Life\dod\dlls 
-copy $(TargetPath) D:\Half-Life\firearms\dlls 
-copy $(TargetPath) D:\Half-Life\frontline\dlls </Command>
+      <Command>copy $(TargetPath) D:\SteamLibrary\SteamApps\common\Half-Life\tfc\addons\monstermod\dlls</Command>
       <Message>Copying to DLL folder</Message>
       <Outputs>$(TargetName);%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -172,6 +159,7 @@ copy $(TargetPath) D:\Half-Life\frontline\dlls </Command>
     <ClCompile Include="dllapi.cpp" />
     <ClCompile Include="effects.cpp" />
     <ClCompile Include="flyingmonster.cpp" />
+    <ClCompile Include="gargantua.cpp" />
     <ClCompile Include="ggrenade.cpp" />
     <ClCompile Include="hassassin.cpp" />
     <ClCompile Include="headcrab.cpp" />

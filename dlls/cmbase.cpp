@@ -69,14 +69,12 @@ edict_t * EHANDLE :: operator -> ()
 	return Get( ); 
 }
 
-
 void *CMBaseEntity::operator new( size_t stAllocateBlock )
 {
 	void *mem = ::operator new( stAllocateBlock );
 	memset( mem, 0, stAllocateBlock );
 	return mem;
 }
-
 
 edict_t *CMBaseEntity::CreateEntity(char *classname)
 {

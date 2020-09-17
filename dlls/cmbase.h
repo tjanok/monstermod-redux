@@ -125,7 +125,8 @@ public:
    edict_t *m_edictList[100];
    int m_edictList_count;
 
-	void *operator new( size_t stAllocateBlock );
+   void *operator new( size_t stAllocateBlock );
+
 
    virtual edict_t *CreateEntity(char *classname);
 
@@ -584,7 +585,7 @@ template <class T> T * CreateClassPtr( T *a )
 	// allocate private data 
 	a = new T;
 
-	if ((temp_edict = a->CreateEntity("func_wall")) == NULL)
+	if ((temp_edict = a->CreateEntity("info_target")) == NULL)
 	{
 		(*g_engfuncs.pfnServerPrint)("[MONSTER] ERROR: NULL Ent in CreateClassPtr!\n" );
 		delete a;
@@ -608,4 +609,3 @@ template <class T> T * CreateClassPtr( T *a )
 
 	return a;
 }
-

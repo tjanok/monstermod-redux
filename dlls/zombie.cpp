@@ -254,8 +254,8 @@ void CMZombie :: Spawn()
 	m_afCapability		= bits_CAP_DOORS_GROUP;
 
 	MonsterInit();
+	META_CONS( "%f %f %f", edict()->v.origin[0], pev->origin[1], pev->origin[2] );
 }
-
 //=========================================================
 // Precache - precaches all resources this monster needs
 //=========================================================
