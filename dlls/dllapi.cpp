@@ -116,6 +116,7 @@ monster_type_t monster_types[] =
    "snark", FALSE,
    "zombie", FALSE,
    "gargantua", FALSE,
+   "robo", FALSE,
    "", FALSE };
 
 monster_t monsters[MAX_MONSTER_ENTS];
@@ -392,6 +393,8 @@ bool spawn_monster( int monster_type, Vector origin, float angle, int respawn_in
 	case 13: monsters[monster_index].pMonster = CreateClassPtr( ( CMZombie* ) NULL );
 		break;
 	case 14: monsters[monster_index].pMonster = CreateClassPtr( ( CGargantua* ) NULL );
+		break;
+	case 15: monsters[monster_index].pMonster = CreateClassPtr( ( CMRoboTrevor* ) NULL );
 		break;
 	}
 
@@ -958,6 +961,7 @@ void mmServerActivate( edict_t* pEdictList, int edictCount, int clientMax )
 	CMSqueakGrenade snark;
 	CMZombie zombie;
 	CGargantua gargantua;
+	CMRoboTrevor robo;
 
 	g_psv_gravity = CVAR_GET_POINTER( "sv_gravity" );
 
@@ -1018,6 +1022,9 @@ void mmServerActivate( edict_t* pEdictList, int edictCount, int clientMax )
 				break;
 			case 14:
 				gargantua.Precache();
+				break;
+			case 15:
+				robo.Precache();
 				break;
 			}
 		}

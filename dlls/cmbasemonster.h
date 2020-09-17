@@ -858,6 +858,43 @@ private:
 	float m_fearTime;
 };
 
+class CMRoboTrevor : public CMBaseMonster
+{
+public:
+	void Spawn( void );
+	void Precache( void );
+
+	void SetYawSpeed( void );
+	int  Classify( void );
+	void HandleAnimEvent( MonsterEvent_t* pEvent );
+	void RunTask( Task_t* pTask );
+	void StartTask( Task_t* pTask );
+	int TakeDamage( entvars_t* pevInflictor, entvars_t* pevAttacker, float flDamage, int bitsDamageType );
+	void SetActivity( Activity newActivity );
+	int ISoundMask( void );
+
+	float	CoverRadius( void ) { return 1200; }		// Need more room for cover because scientists want to get far away!
+	BOOL	DisregardEnemy( edict_t* pEnemy );
+
+	// Override these to set behavior
+	Schedule_t* GetScheduleOfType( int Type );
+	Schedule_t* GetSchedule( void );
+	MONSTERSTATE GetIdealState( void );
+
+	void DeathSound( void );
+	void PainSound( void );
+
+	void	Killed( entvars_t* pevAttacker, int iGib );
+
+	//CUSTOM_SCHEDULES;
+
+private:
+	float m_painTime;
+	float m_healTime;
+	float m_fearTime;
+};
+
+
 
 class CMApache : public CMBaseMonster
 {
