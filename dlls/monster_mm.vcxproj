@@ -180,6 +180,7 @@
     <ClCompile Include="squeakgrenade.cpp" />
     <ClCompile Include="subs.cpp" />
     <ClCompile Include="talkmonster.cpp" />
+    <ClCompile Include="trevor.cpp" />
     <ClCompile Include="util.cpp" />
     <ClCompile Include="weapons.cpp" />
     <ClCompile Include="zombie.cpp" />
